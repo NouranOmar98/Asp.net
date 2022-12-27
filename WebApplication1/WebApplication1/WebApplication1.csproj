@@ -68,10 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="loginpractice.config" />
     <Content Include="Login.aspx" />
     <Content Include="Sign up.aspx" />
-    <Content Include="WebForm3.aspx" />
+    <Content Include="login2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -106,23 +106,23 @@
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
+    <Compile Include="login2.aspx.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
+    <Compile Include="login2.aspx.designer.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Site2.Master" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="loginpractice.Debug.config">
+      <DependentUpon>loginpractice.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="loginpractice.Release.config">
+      <DependentUpon>loginpractice.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

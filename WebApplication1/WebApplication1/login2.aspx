@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="WebApplication1.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="login2.aspx.cs" Inherits="WebApplication1.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -115,7 +115,7 @@
 
               <asp:TextBox id="email2" runat="server" class="form-control form-control-lg"
               placeholder="Enter a valid email address"  ></asp:TextBox>
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="email2" ValidationGroup="Register" ForeColor="Red" ></asp:RequiredFieldValidator>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="email2" ValidationGroup="login" ForeColor="Red" ></asp:RequiredFieldValidator>
               <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="*Please Enter Valid Email" ControlToValidate="email2" ValidationExpression="\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
           </div>
 
@@ -124,7 +124,7 @@
             <label class="form-label" for="form3Example4"><b>Password</b></label>
             <input type="password" id="password1" class="form-control form-control-lg"
               placeholder="Enter password" runat="server"/>
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Required" ControlToValidate="password1" ValidationGroup="Register" ForeColor="Red"></asp:RequiredFieldValidator>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Required" ControlToValidate="password1" ValidationGroup="login" ForeColor="Red"></asp:RequiredFieldValidator>
           </div>
 
           <div class="d-flex justify-content-between align-items-center">
@@ -139,7 +139,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-              <asp:Button ID="Button2" runat="server" Text="Register Now " ValidationGroup="Register" CssClass="btn"/>
+              <asp:Button ID="Button2" runat="server" Text="Register Now " ValidationGroup="login" CssClass="btn"/>
           
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                 class="link-danger">Register now</a></p>
