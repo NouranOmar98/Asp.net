@@ -37,7 +37,7 @@
               <asp:TextBox id="email" runat="server" class="form-control form-control-lg"
               placeholder="Enter a valid email address"  ></asp:TextBox>
               <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Required" ControlToValidate="email" ValidationGroup="Register" ForeColor="Red" ></asp:RequiredFieldValidator>
-              <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="*Please Enter Valid Email" ControlToValidate="email" ValidationExpression="\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
+              <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="*Please Enter Valid Email" ControlToValidate="email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
           </div>
 
           <!-- Password input -->
@@ -69,8 +69,6 @@
 
           <div class="text-center text-lg-start mt-4 pt-2">
               <asp:Button ID="Button1" runat="server" Text="Register Now " ValidationGroup="Register" CssClass="btn"/>
-            <%--<button type="button" runat="server" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">Register now </button>--%>
             <p class="small fw-bold mt-2 pt-1 mb-0">Do you have an account? <a href="#!"
                 class="link-danger">Log in</a></p>
           </div>
@@ -90,7 +88,7 @@
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-            <p class="lead fw-normal mb-0 me-3"><b> Login with</b> </p>
+            <p class="lead fw-normal mb-0 me-3"><b> Log In with</b> </p>
             <button type="button" class="btn btn-primary btn-floating mx-1">
               <i class="fab fa-facebook-f"></i>
             </button>
@@ -116,7 +114,7 @@
               <asp:TextBox id="email2" runat="server" class="form-control form-control-lg"
               placeholder="Enter a valid email address"  ></asp:TextBox>
               <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="email2" ValidationGroup="login" ForeColor="Red" ></asp:RequiredFieldValidator>
-              <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="*Please Enter Valid Email" ControlToValidate="email2" ValidationExpression="\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]\w+)*" ForeColor="Red"></asp:RegularExpressionValidator>
+              <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="*Please Enter Valid Email" ControlToValidate="email2" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
           </div>
 
           <!-- Password input -->
@@ -135,14 +133,14 @@
                 Remember me
               </label>
             </div>
-<%--            <a href="#!" class="text-body">Forgot password?</a>--%>
+            <a href="#!" class="text-body">Forgot password?</a>
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-              <asp:Button ID="Button2" runat="server" Text="Register Now " ValidationGroup="login" CssClass="btn"/>
+              <asp:Button ID="Button2" runat="server" Text="Login " ValidationGroup="log In" CssClass="btn"/>
           
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                class="link-danger">Register now</a></p>
+                class="link-danger"> Log In</a></p>
           </div>
       </div>
     </div>
