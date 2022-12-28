@@ -68,7 +68,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-              <asp:Button ID="Button1" runat="server" Text="Register Now " ValidationGroup="Register" CssClass="btn"/>
+              <asp:Button ID="Button1" runat="server" Text="Register Now " ValidationGroup="Register" CssClass="btn" OnClick="Button1_Click" />
             <p class="small fw-bold mt-2 pt-1 mb-0">Do you have an account? <a href="#!"
                 class="link-danger">Log in</a></p>
           </div>
@@ -137,7 +137,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-              <asp:Button ID="Button2" runat="server" Text="Login " ValidationGroup="log In" CssClass="btn"/>
+              <asp:Button ID="Button2" runat="server" Text="Login " ValidationGroup="log In" CssClass="btn" OnClick="Button2_Click" />
           
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                 class="link-danger"> Log In</a></p>

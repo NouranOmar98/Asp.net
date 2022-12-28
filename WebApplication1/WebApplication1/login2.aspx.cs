@@ -11,6 +11,20 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                "swal('Register Combleted Successfully!', 'Thank You!', 'success')", true);
+            Response.Redirect("login.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                "swal('Welcome! :))', ' Login success')", true);
 
         }
     }
