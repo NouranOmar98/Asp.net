@@ -51,7 +51,7 @@
             <ContentTemplate>
             <asp:TextBox ID="TextBox1" runat="server"  CssClass="text"></asp:TextBox >
             <br /><br />
-            <asp:Button ID="Button1" runat="server" Text="Add Comment" OnClick="Button1_Click" CssClass="btn"/>
+            <asp:Button ID="Button1" runat="server" Text="Submit Comment" OnClick="Button1_Click" CssClass="btn"/>
             </ContentTemplate>
             </asp:UpdatePanel>
         </div>
